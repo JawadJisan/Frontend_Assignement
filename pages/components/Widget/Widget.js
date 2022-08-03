@@ -18,38 +18,39 @@ const Widget = ({ type }) => {
     const diff = 20;
 
     switch (type) {
-        case 'user':
+        case 'works':
             data = {
                 title: 'Works',
-                isMoney: false,
-                link: 'See all Users',
-                icon: <PersonOutlineIcon className='icon' />
+                process: 50,
+                ratings: 75,
+                description: 'Works Today'
+                
             };
             break;
         default:
             break;
-        case 'order':
+        case 'analytics':
             data = {
-                title: 'Orders',
-                isMoney: false,
-                link: 'See all Orders',
-                icon: <ShoppingCartCheckoutOutlined className='icon' />
+                title: 'Analytics',
+                process: 25,
+                ratings: 310,
+                description: 'Analytics Today'
             };
             break;
-        case 'earning':
+        case 'statistics':
             data = {
-                title: 'EARNINGS',
-                isMoney: true,
-                link: 'View Net Earnings',
-                icon: <MonetizationOnOutlined className='icon' />
+                title: 'Statistics',
+                process: 59,
+                ratings: 89,
+                description: 'Todays Status'
             };
             break;
-        case 'balance':
+        case 'tasks':
             data = {
-                title: 'BALANCE',
-                isMoney: true,
-                link: 'See Details',
-                icon: <AccountBalanceWalletOutlined className='icon' />
+                title: 'Tasks',
+                process: 75,
+                ratings: 15,
+                description: 'Task Today'
             };
             break;
 
@@ -58,16 +59,16 @@ const Widget = ({ type }) => {
     return (
         <div className={styles.widget}>
             <div className={styles.top}>
-                <h1 className={styles.title}>Works</h1>
+                <h1 className={styles.title}>{data.title} </h1>
                 <MoreVert fontSize='small' />
             </div>
             <div className={styles.newdiv}>
                 <div className={styles.featuredChart}>
-                    <CircularProgressbar value={50} text={"50%"} strokeWidth={5} />
+                    <CircularProgressbar value={data.process} text={data.process} strokeWidth={5} />
                 </div>
                 <div className={styles.ddd}>
-                    <h3>75</h3>
-                    <h4>Works Today</h4>
+                    <h3>{data.ratings} </h3>
+                    <h4>{data.description} </h4>
                 </div>
             </div>
             {/* <div className={styles.right}>

@@ -1,37 +1,15 @@
 import { color } from '@mui/system';
 import React, { useState } from 'react';
 import styles from '../../../styles/Members.module.scss'
+import Member from './Member';
 
 const Members = () => {
-    const [employs, setEmploys] = useState([]);
-
-    fetch('http://localhost:5000/member')
-        .then(res => res.json())
-        .then(data => {
-            setEmploys(data)
-            console.log(employs, 'members Data')
-        });
 
     return (
         <div className={styles.div}>
             <h3 className={styles.title}>Team Member Performance</h3>
-            {
-                employs.map((e, index) =>
-                    <>
-                        <div className={styles.member}>
-                            <div className={styles.imgDiv}>
-                                <img className={styles.img} src={e.img} alt="" />
-                            </div>
-                            <div className={styles.text}>
-                                <h3>{e.name} </h3>
-                                <p style={{ color: '#9090BA' }}>{e.degignation} </p>
-                            </div>
-                            <h2 style={{ color: '#00ADE1', paddingLeft: '15px', paddingRight: '15px', borderRadius: '10px', backgroundColor: '#113C5E' }}>{e.rating} </h2>
-                        </div>
-                    </>)
-            }
 
-            {/*  <div className={styles.member}>
+             <div className={styles.member}>
                 <div className={styles.imgDiv}>
                     <img className={styles.img} src="https://i.ibb.co/T19Lb7G/Rectangle-36.png" alt="" />
                 </div>
@@ -70,7 +48,7 @@ const Members = () => {
                     <p style={{ color: '#9090BA' }}>Motion Designer</p>
                 </div>
                 <h2 style={{ color: '#00ADE1', textAlign: 'right', paddingLeft: '15px', paddingRight: '15px', borderRadius: '10px', backgroundColor: '#113C5E' }}>8.5</h2>
-            </div> */}
+            </div>
 
         </div>
     );

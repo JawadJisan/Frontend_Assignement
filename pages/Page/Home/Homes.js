@@ -26,10 +26,10 @@ const Homes = () => {
 
                 <div className={styles.firstdiv}>
                     <div style={{paddingLeft: '20px'}} className={styles.widgets}>
-                        <Widget type="user"></Widget>
-                        <Widget type="user"></Widget>
-                        <Widget type="user"></Widget>
-                        <Widget type="user"></Widget>
+                        <Widget type="works"></Widget>
+                        <Widget type="analytics"></Widget>
+                        <Widget type="statistics"></Widget>
+                        <Widget type="tasks"></Widget>
                     </div>
                     <div style={{paddingRight: '50px'}}>
                         <Featured></Featured>
