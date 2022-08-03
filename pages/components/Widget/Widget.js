@@ -37,6 +37,8 @@ const Widget = ({ type }) => {
                 description: 'Analytics Today'
             };
             break;
+
+            
         case 'statistics':
             data = {
                 title: 'Statistics',
