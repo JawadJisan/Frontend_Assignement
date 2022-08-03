@@ -1,0 +1,83 @@
+.widget{
+    margin: 10px;
+    align-items: center;
+    // display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 9px 14px 2px rgba(0,0,0,0.43); 
+box-shadow: 0px 10px 13px -7px #000000, 3px 9px 14px 2px rgba(0,0,0,0.43);
+    border-radius: 10px;
+
+    height: 170px;
+    width: 282px;
+    background-color: rgb(34,34,64);
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        padding: 3px;
+    }
+
+    .featuredChart{
+        width: 80px;
+        height: 80px;
+    }
+    .newdiv{
+        padding: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ddd{
+        text-align: right;
+        color: white;
+
+    }
+    .left, .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    .title{
+        font-weight: bold;
+        font-size: 16px;
+        color: rgb(217, 215, 211);
+    }
+    .counter{
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .link{
+        font-size: 12px;
+        border-bottom: 2px solid gray;
+    }
+
+    .percentage{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+
+        &.positive{
+            color: green;
+        }
+        &.negetive{
+            color: red;
+        }
+    }
+    .icon{
+        font-size: 18px;
+        padding: 5px;
+        // background-color: rgb(139, 57, 221);
+        border-radius: 5px;
+        align-self: flex-end;
+    }
+
+
+
+
+
+    }
+
+}

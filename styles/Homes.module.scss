@@ -1,0 +1,58 @@
+.home {
+    display: flex;
+
+    .homeContainer {
+        padding-bottom: 50px;
+        background-color: rgb(0, 13, 37);
+        flex: 6;
+
+        .firstdiv {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .secondDiv {
+            display: grid;
+            gap: 30px;
+            // grid-template-columns: repeat(2, 1fr 2fr);
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+
+        }
+
+        .widgets {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px;
+            margin: 10px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        // .widgets, .charts {
+        //     display: flex;
+        //     padding: 20px;
+        //     gap: 20px;
+        // }
+
+        .charts {
+            padding-top: 5px;
+        }
+
+        .listContainer {
+            padding: 20px;
+            margin: 20px;
+
+            .listTitle {
+                font-weight: 500;
+                color: gray;
+                margin-bottom: 15px;
+
+            }
+        }
+    }
+}
