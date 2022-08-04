@@ -1,7 +1,10 @@
-import { color } from '@mui/system';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import styles from '../../../styles/Members.module.scss'
-import Member from './Member';
+import a from '../../../public/a.png' 
+import b from '../../../public/b.png' 
+import c from '../../../public/c.png' 
+import d from '../../../public/d.png' 
 
 const Members = () => {
 
@@ -9,9 +12,16 @@ const Members = () => {
         <div className={styles.div}>
             <h3 className={styles.title}>Team Member Performance</h3>
 
-             <div className={styles.member}>
+            <div className={styles.member}>
                 <div className={styles.imgDiv}>
-                    <img className={styles.img} src="https://i.ibb.co/T19Lb7G/Rectangle-36.png" alt="" />
+                    {/* <img className={styles.img} src="https://i.ibb.co/T19Lb7G/Rectangle-36.png" alt="" /> */}
+                    <Image
+                        src={a}
+                        alt="User Pic"
+                        // width={54}
+                        // height={54}
+                        className={styles.img}
+                    />  
                 </div>
                 <div className={styles.text}>
                     <h3>Anirudh Arun</h3>
@@ -21,7 +31,14 @@ const Members = () => {
             </div>
             <div className={styles.member}>
                 <div className={styles.imgDiv}>
-                    <img className={styles.img} src="https://i.ibb.co/N9VY6gX/Rectangle-42.png" alt="" />
+                    <Image
+                        src={b}
+                        alt="User Pic"
+                        // width={54}
+                        // height={54}
+                        className={styles.img}
+                    />                   
+                    {/* <img className={styles.img} src="https://i.ibb.co/N9VY6gX/Rectangle-42.png" alt="" /> */}
                 </div>
                 <div className={styles.text}>
                     <h3>Samvrant</h3>
@@ -31,7 +48,14 @@ const Members = () => {
             </div>
             <div className={styles.member}>
                 <div className={styles.imgDiv}>
-                    <img className={styles.img} src="https://i.ibb.co/DKfDDW6/Rectangle-43.png" alt="" />
+                <Image
+                        src={c}
+                        alt="User Pic"
+                        // width={54}
+                        // height={54}
+                        className={styles.img}
+                    />  
+                    {/* <img className={styles.img} src="https://i.ibb.co/DKfDDW6/Rectangle-43.png" alt="" /> */}
                 </div>
                 <div className={styles.text}>
                     <h3>Aryamann</h3>
@@ -41,7 +65,14 @@ const Members = () => {
             </div>
             <div className={styles.member}>
                 <div className={styles.imgDiv}>
-                    <img className={styles.img} src="https://i.ibb.co/gtrrhvb/Rectangle-44.png" alt="" />
+                    {/* <img className={styles.img} src="https://i.ibb.co/gtrrhvb/Rectangle-44.png" alt="" /> */}
+                    <Image
+                        src={d}
+                        alt="User Pic"
+                        // width={54}
+                        // height={54}
+                        className={styles.img}
+                    />  
                 </div>
                 <div className={styles.text}>
                     <h3>Dhanush</h3>

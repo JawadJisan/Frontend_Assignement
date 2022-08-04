@@ -7,6 +7,9 @@ import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import ListIcon from '@mui/icons-material/List';
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import MessageIcon from '@mui/icons-material/Message';
+import Image from 'next/image';
+import a from '../../../public/a.png' 
+
 
 const Navbar = () => {
     return (
@@ -23,8 +26,15 @@ const Navbar = () => {
                   </div>
                   
                   <div className={styles.item}>
-                     <img src="https://api.lorem.space/image/face?hash=92048" alt=""  className={styles.avater}
-                     />
+                  <Image
+                        src={a}
+                        alt="User Pic"
+                        className={styles.img}
+                        width={54}
+                        height={54}
+                    />  
+                     {/* <img src="https://api.lorem.space/image/face?hash=92048" alt=""  className={styles.avater} */}
+                     
                      
                   </div>
               </div>

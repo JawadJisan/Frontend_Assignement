@@ -7,13 +7,23 @@ import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import SettingsIcon from '@mui/icons-material/Settings';
-import icons from '../Images/icon.png'
+import i from '../../../public/i.png' 
+import Image from 'next/image';
+
 
 const Sidebar = () => {
     return (
         <div className={styles.Sidebar}>
             <div className={styles.top}>
-                <img src='https://i.ibb.co/VQ11GJN/icon.png' className={styles.Logo} alt="LOGO" />
+                {/* <img src='https://i.ibb.co/VQ11GJN/icon.png' className={styles.Logo} alt="LOGO" /> */}
+                <Image
+                        src={i}
+                        alt="LOGO"
+                        width={130}
+                        height={100}
+                        className={styles.Logo}
+                    />  
+                
             </div>
             <div className={styles.center}>
                 <ul>
